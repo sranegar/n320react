@@ -23,5 +23,9 @@ export default function Dialogue() {
   //   return <div>{box}</div>;
   // });
 
-  return <div></div>;
+  return (
+    <div className="boxWrapper">
+      <div className="box1">{box1}</div>
+    </div>
+  );
 }
