@@ -15,13 +15,15 @@ export default class DialogueDetect extends React.Component {
     return (
       <div>
         {this.state.pages[this.state.curPage]}
-        <button
-          onClick={() => {
-            this.next();
-          }}
-        >
-          Next
-        </button>
+        <div className="buttonDiv">
+          <button
+            onClick={() => {
+              this.next();
+            }}
+          >
+            Next
+          </button>
+        </div>
       </div>
     );
   }
