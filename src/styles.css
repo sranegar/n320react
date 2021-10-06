@@ -2,3 +2,42 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.my-node {
+  color: #6e344d;
+  font-weight: bold;
+}
+
+.my-node-enter {
+  opacity: 0;
+}
+
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 2000ms;
+}
+
+.my-node-ext {
+  opacity: 1;
+}
+
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 2000ms;
+}
+
+.feedback {
+  color: #a232a8;
+}
+
+.feedbackMore {
+  font-weight: bold;
+  color: #a85132;
+  transition: color 1700ms;
+}
+
+button {
+  background-color: #8382b5;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
