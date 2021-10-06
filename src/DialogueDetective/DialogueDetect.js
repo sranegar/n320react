@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
 import "./styles.css";
 import Dialogue from "./Dialogue";
+import Dialogue2 from "./Dialogue2";
 
 export default class DialogueDetect extends React.Component {
   //create an array of components
@@ -13,8 +14,7 @@ export default class DialogueDetect extends React.Component {
   render() {
     return (
       <div>
-        <h1>Dialogue Detective</h1>
-        <Dialogue />
+        {this.state.pages[this.state.curPage]}
         <button
           onClick={() => {
             this.next();
