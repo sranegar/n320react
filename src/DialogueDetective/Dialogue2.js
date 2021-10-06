@@ -3,10 +3,11 @@ import { CSSTransition } from "react-transition-group";
 import "./styles.css";
 
 export default function Dialogue() {
-  //create hook for cards
+  //create hook for dialogue box 2
   const [box2, setBox2] = useState([]);
 
   useEffect(() => {
+    //create an array of quotes
     let quotes = ["Hey, how are you?"];
 
     // let characterBox = characters.flatMap((box) => {
