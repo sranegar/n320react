@@ -1,6 +1,11 @@
+.contentWrapper {
+  margin-left: 60px;
+}
+
 .boxWrapper {
   width: 30px;
   height: 90px;
+  padding: 30px;
 }
 
 .box1 {
@@ -16,7 +21,7 @@
 
 .box2 {
   margin: 4px;
-  margin-left: 80px;
+  margin-left: 50px;
   width: 250px;
   height: 90px;
   border: 2px solid #7150b3;
@@ -27,7 +32,8 @@
 }
 
 .buttonDiv {
+  margin-left: 60px;
   width: 200px;
   height: 90px;
-  margin-top: 10px;
+  margin-top: 20px;
 }

@@ -13,7 +13,7 @@ export default class DialogueDetect extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className="contentWrapper">
         {this.state.pages[this.state.curPage]}
         <div className="buttonDiv">
           <button
