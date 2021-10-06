@@ -5,7 +5,7 @@
 .boxWrapper {
   width: 30px;
   height: 90px;
-  padding: 30px;
+  padding: 13px;
 }
 
 .box1 {
@@ -36,4 +36,14 @@
   width: 200px;
   height: 90px;
   margin-top: 20px;
+}
+
+.ddButton {
+  background-color: #47bf53;
+  border-radius: 50px;
+  height: 30px;
+  width: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }

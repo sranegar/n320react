@@ -17,6 +17,7 @@ export default class DialogueDetect extends React.Component {
         {this.state.pages[this.state.curPage]}
         <div className="buttonDiv">
           <button
+            className="ddButton"
             onClick={() => {
               this.next();
             }}
