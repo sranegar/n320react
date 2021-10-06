@@ -7,7 +7,7 @@ export default function Dialogue() {
   const [box2, setBox2] = useState([]);
 
   useEffect(() => {
-    let quotes = ["Hello Young GrassHopper..."];
+    let quotes = ["Hey, how are you?"];
 
     // let characterBox = characters.flatMap((box) => {
     //   return [1, 2, 3].map((val) => {

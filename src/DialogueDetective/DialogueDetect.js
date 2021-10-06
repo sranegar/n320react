@@ -28,7 +28,7 @@ export default class DialogueDetect extends React.Component {
 
   next() {
     this.setState({ curPage: this.state.count + 1 });
-    console.log(curPage);
+    console.log(this.state.curPage);
     if (this.state.curPage > 0) {
       this.setState({ curPage: this.state.count });
     }
