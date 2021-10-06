@@ -4,18 +4,18 @@ import "./styles.css";
 
 export default function Dialogue() {
   //create hook for cards
-  const [box, setBox] = useState([]);
+  const [box1, setBox1] = useState([]);
 
   useEffect(() => {
-    let characters = ["Billy", "Kyle", "Rhonda"];
+    let quotes = ["Hello Young GrassHopper..."];
 
     // let characterBox = characters.flatMap((box) => {
     //   return [1, 2, 3].map((val) => {
     //     return box + val; //add to larger array
     //   });
     // });
-    console.log(characters);
-    setBox(characters);
+    console.log(quotes);
+    setBox1(quotes);
   }, []);
 
   //render
