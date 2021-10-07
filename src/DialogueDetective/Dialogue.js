@@ -4,6 +4,7 @@ import "./styles.css";
 
 export default function Dialogue() {
   //create hook for dialogue box 1
+  const [character1, setCharacter1] = useState("Reggie:  ");
   const [box1, setBox1] = useState([]);
 
   useEffect(() => {
@@ -16,7 +17,7 @@ export default function Dialogue() {
     //   });
     // });
     console.log(quotes);
-    setBox1(quotes.[0]);
+    setBox1((character1) + quotes.[0]);
   }, []);
 
   //render
