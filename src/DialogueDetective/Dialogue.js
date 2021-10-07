@@ -7,6 +7,7 @@ export default function Dialogue() {
   const [character1, setCharacter1] = useState("Reggie:  ");
   const [box1, setBox1] = useState([]);
 
+  //on page load
   useEffect(() => {
     //create an array of quotes
     let quotes = ["Hello Young GrassHopper...", "How are your teachings?"];
