@@ -6,6 +6,8 @@ export default function Dialogue() {
   //create hook for dialogue box 2
   const [box2, setBox2] = useState([]);
 
+  //create hook for character 2
+  const [character2, setCharacter2] = useState("Lenny:  ");
   useEffect(() => {
     //create an array of quotes
     let quotes = ["Hey, how are you?"];
@@ -16,7 +18,7 @@ export default function Dialogue() {
     //   });
     // });
     console.log(quotes);
-    setBox2(quotes);
+    setBox2(character2 + quotes);
   }, []);
 
   //render
