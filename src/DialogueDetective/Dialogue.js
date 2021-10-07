@@ -6,11 +6,12 @@ export default function Dialogue() {
   //create hook for dialogue box 1
   const [character1, setCharacter1] = useState("Reggie:  ");
   const [box1, setBox1] = useState([]);
+  const [quotes1, setQuotes1] = useState([]);
 
   //on page load
   useEffect(() => {
     //create an array of quotes
-    let quotes = ["Hello Young GrassHopper...", "How are your teachings?"];
+    let quotes  = ["Hello Young GrassHopper...", "How are your teachings?"];
 
     // let characterBox = characters.flatMap((box) => {
     //   return [1, 2, 3].map((val) => {
@@ -19,6 +20,7 @@ export default function Dialogue() {
     // });
     console.log(quotes);
     setBox1((character1) + quotes.[0]);
+    setQuotes1(quotes);
   }, []);
 
   //render
