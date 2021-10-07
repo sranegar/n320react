@@ -4,7 +4,6 @@ import "./styles.css";
 import Dialogue from "./Dialogue";
 import Dialogue2 from "./Dialogue2";
 import CountClicks from "./CountClicks.js";
-import CharacterNames from "./CharacterNames.js";
 
 export default class DialogueDetect extends React.Component {
   //create an array of components
@@ -15,6 +14,13 @@ export default class DialogueDetect extends React.Component {
     zero: 0,
     clicks: 0
   };
+
+  constructor(count) {
+    super();
+    this.count = count;
+    console.log(this.count);
+  }
+
   render() {
     return (
       <div className="contentWrapper">
@@ -39,5 +45,9 @@ export default class DialogueDetect extends React.Component {
     if (this.state.curPage > 0) {
       this.setState({ curPage: this.state.count });
     }
+  }
+
+  componentDidUpdate() {
+    // console.log("Update happened");
   }
 }
