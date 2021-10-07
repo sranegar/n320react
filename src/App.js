@@ -26,7 +26,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <DialogueDetective />
+        {/* <DialogueDetective /> */}
         <h1>Stephanie Ranegar</h1>
         <div>
           <button
