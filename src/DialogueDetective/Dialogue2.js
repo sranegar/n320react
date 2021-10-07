@@ -12,7 +12,7 @@ export default function Dialogue() {
   //on page load
   useEffect(() => {
     //create an array of quotes
-    let quotes = ["Hey, how are you?", "second quote here"];
+    let quotes = ["Hello Old Wise One...", "second quote here"];
 
     setBox2((character2) + quotes.[0]);
   }, []);

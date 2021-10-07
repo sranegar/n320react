@@ -4,6 +4,7 @@ import "./styles.css";
 import Dialogue from "./Dialogue";
 import Dialogue2 from "./Dialogue2";
 import CountClicks from "./CountClicks.js";
+import CharacterNames from "./CharacterNames.js";
 
 export default class DialogueDetect extends React.Component {
   //create an array of components
