@@ -16,7 +16,7 @@ export default function Dialogue() {
     //create an array of quotes
     let quotes  = ["Hello Young GrassHopper...", "How are your teachings?"];
 
-    console.log(quotes);
+   
     setBox1((character1) + quotes.[0]);
     setQuotes1(quotes);
   }, []);

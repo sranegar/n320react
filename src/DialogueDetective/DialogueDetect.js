@@ -13,12 +13,12 @@ export default class DialogueDetect extends React.Component {
     count: 0,
     zero: 0,
     clicks: 0
+    // quotes: ["Quote one", "Quote2"]
   };
 
   constructor(count) {
     super();
     this.count = count;
-    console.log(this.count);
   }
 
   render() {
