@@ -7,7 +7,7 @@ export default class RandRoll extends React.Component {
   render() {
     return (
       <div className="roll">
-        <h2>Roll: {this.state.roll}.</h2>
+        <h2>Roll: {this.state.roll} </h2>
         <button
           onClick={() => {
             this.roll();
@@ -23,5 +23,6 @@ export default class RandRoll extends React.Component {
     this.setState({
       roll: Math.floor(Math.random() * 6) + 1
     });
+    // console.log(this.state.roll);
   }
 }

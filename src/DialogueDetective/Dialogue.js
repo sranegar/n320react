@@ -3,9 +3,12 @@ import { CSSTransition } from "react-transition-group";
 import "./styles.css";
 
 export default function Dialogue() {
-  //create hook for dialogue box 1
+  //create hook for character 1
   const [character1, setCharacter1] = useState("Reggie:  ");
+ //create hook for box 2
   const [box1, setBox1] = useState([]);
+
+  //create quotes from character 2
   const [quotes1, setQuotes1] = useState([]);
 
   //on page load
@@ -13,21 +16,12 @@ export default function Dialogue() {
     //create an array of quotes
     let quotes  = ["Hello Young GrassHopper...", "How are your teachings?"];
 
-    // let characterBox = characters.flatMap((box) => {
-    //   return [1, 2, 3].map((val) => {
-    //     return box + val; //add to larger array
-    //   });
-    // });
     console.log(quotes);
     setBox1((character1) + quotes.[0]);
     setQuotes1(quotes);
   }, []);
 
-  //render
-  // let boxEls = box.map((box, ind) => {
-  //   return <div>{box}</div>;
-  // });
-
+//render to page
   return (
     <div className="boxWrapper">
       <div className="box1">{box1}</div>

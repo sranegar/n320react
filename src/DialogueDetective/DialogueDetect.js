@@ -3,13 +3,16 @@ import { CSSTransition } from "react-transition-group";
 import "./styles.css";
 import Dialogue from "./Dialogue";
 import Dialogue2 from "./Dialogue2";
+import CountClicks from "./CountClicks.js";
 
 export default class DialogueDetect extends React.Component {
   //create an array of components
   state = {
     pages: [<Dialogue />, <Dialogue2 />],
     curPage: 0,
-    count: 0
+    count: 0,
+    zero: 0,
+    clicks: 0
   };
   render() {
     return (
@@ -31,7 +34,7 @@ export default class DialogueDetect extends React.Component {
 
   next() {
     this.setState({ curPage: this.state.count + 1 });
-    console.log(this.state.curPage);
+    // console.log(this.state.curPage);
     if (this.state.curPage > 0) {
       this.setState({ curPage: this.state.count });
     }
