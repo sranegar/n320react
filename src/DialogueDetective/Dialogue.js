@@ -14,7 +14,13 @@ export default function Dialogue() {
   //on page load
   useEffect(() => {
     //create an array of quotes
-    let quotes  = ["Hello Young GrassHopper...", "How are your teachings?"];
+    let quotes  = [
+    "Hello Young GrassHopper...", 
+    "How are your teachings?",
+    "Third quote",
+    "Fourth quote",
+    "Fifth quote"
+    ];
 
    
     setBox1((character1) + quotes.[0]);

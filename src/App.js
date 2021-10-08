@@ -76,7 +76,7 @@ export default class App extends React.Component {
               this.swapProject(6);
             }}
           >
-            Dialogue Detective
+            Dialogue Practice
           </button>
         </div>
         {this.state.pages[this.state.curPage]}

@@ -9,12 +9,21 @@ export default function Dialogue() {
   //create hook for character 2
   const [character2, setCharacter2] = useState("Lenny:  ");
 
+  //create quotes from character 2
+  const [quotes2, setQuotes2] = useState([]);
+
   //on page load
   useEffect(() => {
     //create an array of quotes
-    let quotes = ["Hello Old Wise One...", "second quote here"];
+    let quotes = [
+    "Hello Old Wise One...", 
+    "second quote here",
+    "third quote here", 
+    "fourth quote here",
+    "fifth quote here"
+    ];
 
-    setBox2((character2) + quotes.[0]);
+    setBox2((character2) + quotes.[2]);
   }, []);
 
   //render to page
@@ -23,4 +32,6 @@ export default function Dialogue() {
       <div className="box2">{box2}</div>
     </div>
   );
+
+
 }
