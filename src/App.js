@@ -71,13 +71,13 @@ export default class App extends React.Component {
           >
             AnimLab
           </button>
-          <button
+          {/* <button
             onClick={() => {
               this.swapProject(6);
             }}
           >
             Dialogue Practice
-          </button>
+          </button> */}
         </div>
         {this.state.pages[this.state.curPage]}
       </div>
