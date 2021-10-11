@@ -8,6 +8,7 @@ import TimesClicked from "./components/TimesClicked.js";
 import Example from "./Example.js";
 import AnimLab from "./AnimationLab/AnimLab.js";
 import DialogueDetective from "./DialogueDetective/DialogueDetect.js";
+import Map from "./Map/Map";
 
 export default class App extends React.Component {
   //create an array of components
@@ -19,14 +20,15 @@ export default class App extends React.Component {
       <TimesClicked />,
       <Example />,
       <AnimLab />,
-      <DialogueDetective />
+      <DialogueDetective />,
+      <Map />
     ],
     curPage: 0
   };
   render() {
     return (
       <div className="App">
-        {/* <DialogueDetective /> */}
+        {/* <Map /> */}
         <h1>Stephanie Ranegar</h1>
         <div>
           <button
@@ -71,13 +73,13 @@ export default class App extends React.Component {
           >
             AnimLab
           </button>
-          {/* <button
+          <button
             onClick={() => {
-              this.swapProject(6);
+              this.swapProject(7);
             }}
           >
-            Dialogue Practice
-          </button> */}
+            Map
+          </button>
         </div>
         {this.state.pages[this.state.curPage]}
       </div>
