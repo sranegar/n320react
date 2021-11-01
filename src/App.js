@@ -22,7 +22,8 @@ export default class App extends React.Component {
       <Example />,
       <AnimLab />,
       <DialogueDetective />,
-      <Map />
+      <Map />,
+      <Inventory />
     ],
     curPage: 0
   };
@@ -80,6 +81,13 @@ export default class App extends React.Component {
             }}
           >
             Map
+          </button>
+          <button
+            onClick={() => {
+              this.swapProject(8);
+            }}
+          >
+            Inventory
           </button>
         </div>
         {this.state.pages[this.state.curPage]}
