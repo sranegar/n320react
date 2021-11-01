@@ -8,7 +8,8 @@ import TimesClicked from "./components/TimesClicked.js";
 import Example from "./Example.js";
 import AnimLab from "./AnimationLab/AnimLab.js";
 import DialogueDetective from "./DialogueDetective/DialogueDetect.js";
-import Map from "./Map/Map";
+import Map from "./Map/Map.js";
+import Inventory from "./Cart/Inventory.js";
 
 export default class App extends React.Component {
   //create an array of components
@@ -28,7 +29,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {/* <Map /> */}
+        <Inventory />
         <h1>Stephanie Ranegar</h1>
         <div>
           <button
