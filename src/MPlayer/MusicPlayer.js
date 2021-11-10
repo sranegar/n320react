@@ -30,7 +30,7 @@ export default function MusicPlayer(props) {
         }}
       />
       <PlayWidget currentTrack={curPlaying} setCurProgress={setCurProgress} />
-      <MusicVis />
+      <MusicVis size={50} progress={curProgress} />
     </div>
   );
 
