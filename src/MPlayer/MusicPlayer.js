@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import MusicList from "./MusicList.js";
 import PlayWidget from "./PlayWidget.js";
+import MusicVis from "./MusicVis.js";
 
 export default function MusicPlayer(props) {
   const [tracks, setTracks] = useState([]);
   const [curPlaying, setCurplaying] = useState({});
-  const [curProgress, setCurProgress] = useState();
+  const [curProgress, setCurProgress] = useState(0);
 
   useEffect(() => {
     fetch("data/music.json")
@@ -29,6 +30,7 @@ export default function MusicPlayer(props) {
         }}
       />
       <PlayWidget currentTrack={curPlaying} setCurProgress={setCurProgress} />
+      <MusicVis />
     </div>
   );
 
