@@ -34,7 +34,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Crystals />
+        <MusicPlayer />
         <h1>Stephanie Ranegar</h1>
         <div>
           <button
