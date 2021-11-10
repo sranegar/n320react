@@ -93,6 +93,20 @@ export default class App extends React.Component {
           >
             Bag Lag
           </button>
+          <button
+            onClick={() => {
+              this.swapProject(9);
+            }}
+          >
+            Crystals
+          </button>
+          <button
+            onClick={() => {
+              this.swapProject(10);
+            }}
+          >
+            Music Player
+          </button>
         </div>
         {this.state.pages[this.state.curPage]}
       </div>
