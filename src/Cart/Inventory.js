@@ -15,6 +15,7 @@ export default function Inventory() {
     fetch("data/items.json")
       .then((result) => result.json())
       .then((data) => {
+        console.log(data);
         setItems(data);
         //store data
       });

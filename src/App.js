@@ -10,6 +10,8 @@ import AnimLab from "./AnimationLab/AnimLab.js";
 import DialogueDetective from "./DialogueDetective/DialogueDetect.js";
 import Map from "./Map/Map.js";
 import Inventory from "./Cart/Inventory.js";
+import Crystals from "./CrystalDex/Crystals.js";
+import MusicPlayer from "./MPlayer/MusicPlayer.js";
 
 export default class App extends React.Component {
   //create an array of components
@@ -23,14 +25,16 @@ export default class App extends React.Component {
       <AnimLab />,
       <DialogueDetective />,
       <Map />,
-      <Inventory />
+      <Inventory />,
+      <Crystals />,
+      <MusicPlayer />
     ],
     curPage: 0
   };
   render() {
     return (
       <div className="App">
-        <Inventory />
+        <Crystals />
         <h1>Stephanie Ranegar</h1>
         <div>
           <button
@@ -87,7 +91,7 @@ export default class App extends React.Component {
               this.swapProject(8);
             }}
           >
-            Inventory
+            Bag Lag
           </button>
         </div>
         {this.state.pages[this.state.curPage]}

@@ -1,0 +1,6 @@
+th {
+  height: 100px;
+  width: 100px;
+  justify-content: space-between;
+  border: solid 2px rgb(149, 150, 228);
+}
