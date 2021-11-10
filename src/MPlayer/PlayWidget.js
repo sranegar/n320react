@@ -10,12 +10,11 @@ export default function PlayWidget(props) {
         ref={audioRef}
         src={props.currentTrack.url}
         onPlay={() => {
-          let audi = setInterval(() => {
+          setInterval(() => {
             let progress =
               audioRef.current.currentTime / audioRef.current.duration; //calculate duration
             props.setCurProgress(progress);
           }, 100); //ms
-          setAudInterval(audi);
         }}
         onPause={() => {}}
       />
