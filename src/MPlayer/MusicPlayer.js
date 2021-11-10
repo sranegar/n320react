@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import MusicList from "./MusicList.js";
+import PlayWidget from "./PlayWidget.js";
 
-export default function PlayWidget(props) {
+export default function MusicPlayer(props) {
   const [tracks, setTracks] = useState([]);
+  const [curPlaying, setCurplaying] = useState({});
 
   useEffect(() => {
     fetch("data/music.json")
@@ -16,7 +18,25 @@ export default function PlayWidget(props) {
 
   return (
     <div>
-      <MusicList tracks={tracks} />
+      MUSIC PLAYER
+      <div>Now Playing: {curPlaying.title}</div>
+      <MusicList
+        tracks={tracks}
+        curPlaying={curPlaying}
+        onSelected={(id) => {
+          trackSelected(id);
+        }}
+      />
+      <PlayWidget currentTrack={curPlaying} />
     </div>
   );
+
+  //"class methods"
+  function trackSelected(id) {
+    //find track
+    const foundTrack = tracks.find((track) => track.id == id);
+    console.log(foundTrack);
+    //set as currently selected track - in this component
+    setCurplaying(foundTrack);
+  }
 }
