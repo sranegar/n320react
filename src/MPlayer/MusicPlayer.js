@@ -5,6 +5,7 @@ import PlayWidget from "./PlayWidget.js";
 export default function MusicPlayer(props) {
   const [tracks, setTracks] = useState([]);
   const [curPlaying, setCurplaying] = useState({});
+  const [curProgress, setCurProgress] = useState();
 
   useEffect(() => {
     fetch("data/music.json")
@@ -27,7 +28,7 @@ export default function MusicPlayer(props) {
           trackSelected(id);
         }}
       />
-      <PlayWidget currentTrack={curPlaying} />
+      <PlayWidget currentTrack={curPlaying} setCurProgress={setCurProgress} />
     </div>
   );
 
