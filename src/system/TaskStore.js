@@ -32,6 +32,32 @@ let TaskStore = {
     ];
 
     this.updateSubscribers();
+  },
+  moveTask: function (moveCommand) {
+    let curRowTasks = this.rows[MoveCommand.curRow].tasks;
+
+    //get the task
+    let task = curRowTasks.slice(
+      moveCommand.task.index,
+      moveCommand.task.index + 1
+    )[0];
+
+    //remove from the old row
+    let filteredRow = curRowTasks.filter(
+      (task, index) => index !== moveCommand.task.index
+    );
+
+    //set the old row data to new row data
+    this.rows[moveCommand.curRow].tasks = filteredRow;
+
+    //add the task to the new row
+    this.rows[moveCommand.newRow].tasks = [
+      ...this.rows[moveCommand.newRow].tasks,
+      task
+    ];
+
+    //inform app
+    this.updateSubscribers();
   }
 };
 
@@ -39,4 +65,11 @@ function AddCommand(row, description) {
   this.row = row;
   this.description = description;
 }
-export { TaskStore, AddCommand };
+
+function MoveCommand(curRow, newRow, task) {
+  this.curRow = curRow;
+  this.newROw = newRow;
+  this.task = task;
+}
+
+export { TaskStore, AddCommand, MoveCommand };
