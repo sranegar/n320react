@@ -12,6 +12,10 @@ import Map from "./Map/Map.js";
 import Inventory from "./Cart/Inventory.js";
 import Crystals from "./CrystalDex/Crystals.js";
 import MusicPlayer from "./MPlayer/MusicPlayer.js";
+import CounterTest from "./system/CounterTest.js";
+
+import store from "./system/store";
+import { Provider } from "react-redux";
 
 export default class App extends React.Component {
   //create an array of components
@@ -34,7 +38,6 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <MusicPlayer />
         <h1>Stephanie Ranegar</h1>
         <div>
           <button
