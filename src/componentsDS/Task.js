@@ -11,7 +11,7 @@ export default function Task({ description, index, rowNum }) {
   );
 
   return (
-    <Card>
+    <Card ref={drag}>
       <p>{description}</p>
     </Card>
   );

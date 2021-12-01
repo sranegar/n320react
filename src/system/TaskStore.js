@@ -34,7 +34,7 @@ let TaskStore = {
     this.updateSubscribers();
   },
   moveTask: function (moveCommand) {
-    let curRowTasks = this.rows[MoveCommand.curRow].tasks;
+    let curRowTasks = this.rows[moveCommand.curRow].tasks;
 
     //get the task
     let task = curRowTasks.slice(
@@ -56,7 +56,6 @@ let TaskStore = {
       task
     ];
 
-    //inform app
     this.updateSubscribers();
   }
 };
@@ -68,7 +67,7 @@ function AddCommand(row, description) {
 
 function MoveCommand(curRow, newRow, task) {
   this.curRow = curRow;
-  this.newROw = newRow;
+  this.newRow = newRow;
   this.task = task;
 }
 
