@@ -13,6 +13,8 @@ import Inventory from "./Cart/Inventory.js";
 import Crystals from "./CrystalDex/Crystals.js";
 import MusicPlayer from "./MPlayer/MusicPlayer.js";
 import FakeKanban from "./componentsDS/FakeKanban.js";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
 
 export default class App extends React.Component {
   //create an array of components
@@ -35,7 +37,9 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <FakeKanban />
+        <DndProvider backend={HTML5Backend}>
+          <FakeKanban />
+        </DndProvider>
         <h1>Stephanie Ranegar</h1>
         <div>
           <button
