@@ -14,6 +14,7 @@ let TaskStore = {
   subscribe: function (callback) {
     this.subscribers.push(callback);
   },
+
   updateSubscribers: function () {
     this.subscribers.forEach((callback) => {
       callback();
@@ -30,7 +31,7 @@ let TaskStore = {
       }
     ];
 
-    console.log(this.rows[addCommand.row]);
+    this.updateSubscribers();
   }
 };
 
