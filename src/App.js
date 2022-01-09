@@ -9,7 +9,6 @@ import AnimLab from "./AnimationLab/AnimLab.js";
 import DialogueDetective from "./DialogueDetective/DialogueDetect.js";
 import Map from "./Map/Map.js";
 import Inventory from "./Cart/Inventory.js";
-import Crystals from "./CrystalDex/Crystals.js";
 import MusicPlayer from "./MPlayer/MusicPlayer.js";
 import FakeKanban from "./componentsDS/FakeKanban.js";
 import { DndProvider } from "react-dnd";
