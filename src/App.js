@@ -1,7 +1,6 @@
 import "./styles.css";
 import React from "react";
 import Clock from "./Clock.js";
-import UserName from "./components/UserName.js";
 import RandomRoll from "./components/RandRoll.js";
 import RecipeSearch from "./components/RecipeSearch.js";
 import TimesClicked from "./components/TimesClicked.js";
@@ -29,18 +28,19 @@ export default class App extends React.Component {
       <DialogueDetective />,
       <Map />,
       <Inventory />,
-      <Crystals />,
+      <DndProvider backend={HTML5Backend}>
+        <FakeKanban />
+      </DndProvider>,
       <MusicPlayer />
     ],
-    curPage: 0
+    curPage: " "
   };
   render() {
     return (
       <div className="App">
-        <DndProvider backend={HTML5Backend}>
-          <FakeKanban />
-        </DndProvider>
         <h1>Stephanie Ranegar</h1>
+        <h3>GETTING FAMILIAR WITH ⚛️ REACT</h3>
+        <p>A series of short hands-on React practices</p>
         <div>
           <button
             onClick={() => {
@@ -103,7 +103,7 @@ export default class App extends React.Component {
               this.swapProject(9);
             }}
           >
-            Crystals
+            Item List
           </button>
           <button
             onClick={() => {
