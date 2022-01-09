@@ -38,8 +38,8 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Stephanie Ranegar</h1>
-        <h3>GETTING FAMILIAR WITH ⚛️ REACT</h3>
+        <h2>Stephanie Ranegar</h2>
+        <h4>GETTING FAMILIAR WITH ⚛️ REACT</h4>
         <p>A series of short hands-on React practices</p>
         <div>
           <button
@@ -103,7 +103,7 @@ export default class App extends React.Component {
               this.swapProject(9);
             }}
           >
-            Item List
+            Task List
           </button>
           <button
             onClick={() => {

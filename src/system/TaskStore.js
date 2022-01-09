@@ -3,8 +3,8 @@ let TaskStore = {
     {
       name: "Upcoming",
       tasks: [
-        { id: 0, description: "Test Task" },
-        { id: 2, description: "2Test 2Task" }
+        { id: 0, description: "Learn React" },
+        { id: 2, description: "Update PhpStorm" }
       ]
     },
     { name: "In Progress", tasks: [] },
