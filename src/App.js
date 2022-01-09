@@ -9,7 +9,6 @@ import AnimLab from "./AnimationLab/AnimLab.js";
 import DialogueDetective from "./DialogueDetective/DialogueDetect.js";
 import Map from "./Map/Map.js";
 import Inventory from "./Cart/Inventory.js";
-import MusicPlayer from "./MPlayer/MusicPlayer.js";
 import FakeKanban from "./componentsDS/FakeKanban.js";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
@@ -29,8 +28,7 @@ export default class App extends React.Component {
       <Inventory />,
       <DndProvider backend={HTML5Backend}>
         <FakeKanban />
-      </DndProvider>,
-      <MusicPlayer />
+      </DndProvider>
     ],
     curPage: " "
   };
@@ -103,13 +101,6 @@ export default class App extends React.Component {
             }}
           >
             Task List
-          </button>
-          <button
-            onClick={() => {
-              this.swapProject(10);
-            }}
-          >
-            Music Player
           </button>
           <hr />
         </div>
