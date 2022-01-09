@@ -112,6 +112,7 @@ export default class App extends React.Component {
           >
             Music Player
           </button>
+          <hr />
         </div>
         {this.state.pages[this.state.curPage]}
       </div>
